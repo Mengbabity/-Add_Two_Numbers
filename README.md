@@ -1,4 +1,3 @@
-
 # -Add_Two_Numbers
 
 #add_two_numbers
@@ -13,3 +12,10 @@
 
 在while中进行l1与l2的值的插入。若1的值小，插入1，否则插入2。while的条件是两个链表均为true。
 最后将没放完的链表直接赋给p->next。
+
+#Remove Duplicates from Sorted List
+
+去掉链表中重复的元素，并返回该链表。
+
+首先定义一个指向该链表的指针，在while循环中，若指针当前指向的值与其next指向的值相等，就将其next指向下一个元素的指针赋给当前指向的next的指针。
+即p->next=p->next->next，即删去了后面重复的元素，仅保留了第一个。
